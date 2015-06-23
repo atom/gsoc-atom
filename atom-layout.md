@@ -19,7 +19,8 @@ keyCode: 81, keyIdentifier: "U+0051", keyLocation: 0, layerX: 0, layerY: 0, loca
 
 ```
 <p align="justify">
-&nbsp;On a german keyboard: </p>
+&nbsp;On a german keyboard: 
+</p>
 
 ```
 Alt
