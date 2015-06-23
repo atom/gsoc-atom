@@ -56,10 +56,10 @@ keyCode: 191, keyIdentifier: "U+00BF", keyLocation: 0, layerX: 0, layerY: 0, loc
 ## Probable cause
 <p align="justify">
 &nbsp; KeyboardEvent(shortened event from here) has a member called keyIdentifier. Event.keyIdentifer is supposed to be a hash
-that helps identifying  keys. But there's an issue with that, there are several key identifiers in webkit that are wrong. See [here](https://bugs.webkit.org/show_bug.cgi?id=19906).
-Moreover, there's [this](https://code.google.com/p/chromium/issues/detail?id=263724) well known bug in chromium.
+that helps identifying  keys. But there's an issue with that, there are several key identifiers in webkit that are wrong. See <a href=https://bugs.webkit.org/show_bug.cgi?id=19906>here</a>.
+Moreover, there's <a href=https://code.google.com/p/chromium/issues/detail?id=263724>this</a> well known bug in chromium.
 
-Event.keyIdentifier is <b>not</b> the same as Event.key described [in DOM 3 events keys](http://www.w3.org/TR/DOM-Level-3-Events-key/#key-value-tables) . Key is not implemented in Chrome/Webkit.
+Event.keyIdentifier is <b>not</b> the same as Event.key described <a href=http://www.w3.org/TR/DOM-Level-3-Events-key/#key-value-tables>in DOM 3 events keys</a> . Key is not implemented in Chrome/Webkit.
 </p>
 ## Solution
 
