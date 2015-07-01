@@ -20,13 +20,9 @@ There's a saying about what hapens when you chase two rabbits, so we decided to 
 - ctrl-shift-7 is read as ctrl-? instead of ctrl-/
 
 <p align="justify"> From left to right, we have : alt pressed on a US keyboard layout, alt gr pressed on a German keyboard and (alt gr + q) on a German keyboard</p>
+<img src=http://i.imgur.com/jentXet.png>
 
-<table width="100%">
-<tr>
-<td><img src=http://i.imgur.com/t0SEFbb.png></td>
-<td><p align="center"><img src="http://i.imgur.com/fZKWFk8.png"></td>
-<td align="right"><img src="http://i.imgur.com/h2fOWZl.png"></td>
-</tr>
+
 
 <p align="justify"> Based on the images above we can notice a few issues </p>
 
@@ -62,5 +58,4 @@ Chrome version: Version 45.0.2441.0 (64-bit) built from source <br>
 Atom version: 0.208.0-cecd233 built from source. <br>
 
 <b> Note:</b> All aforementioned key combinations (on their specific layouts) were tested in the URL bar(of Chrome) as well as in a terminal. The keyboard events issue is not caused by the operating system. Further proof is that the issues manifest differently on different operating systems.
-
 </p>
