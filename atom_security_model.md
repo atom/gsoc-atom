@@ -1,4 +1,4 @@
-# Porting a Node.js based application over NaCl
+# Porting a Node.js based application(Atom) over NaCl
 
 <p align="justify"> This article describes the attempts of porting the <a href=https://atom.io>Atom editor</a> over <a href=https://developer.chrome.com/native-client>NaCl</a>, a detailed description of the research project, along with  a description of the major obstacles encountered. The need to port node.js over NaCl rose from the necessity of offering Atom a better security model, starting from the lowest level(native code) towards javascript context-level security. Node.js relies on <a href=https://code.google.com/p/v8>Google Chrome's V8 JavaScript Engine</a> to load native code modules, making NaCl an evident choice for security.
 </p>
