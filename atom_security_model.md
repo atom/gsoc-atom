@@ -38,12 +38,12 @@ A trampoline is a small piece of code, residing at the bottom of the untrusted p
 <p align="justify">It was clear that the dynamic code generation was a dealbreaker, and thus I began search for a V8 ported over NaCl that did have JIT. I found <a href=https://github.com/p-march/nacl-v8>this nacl experimental build.</a> That V8   port was a research project in itself, accompanied by a highly detailed <a href=https://github.com/p-march/nacl-v8/blob/master/nacljit.pdf>paper</a> [3].<br><br>
 While the research project was nonetheless useful, it was too difficult to use in production. The V8 port was more than one year old and not actively maintained. In order to adapt the port to a newer version of V8, significant changes were required. Moreover, it would have required to have someone continously integrate important V8 updates into the fork. Based on all the aforementioned facts, we decided to give up this approach, as well.<br></p> 
 </p>
-#### Last step - official V8 port over NaCl
+### Last step - official V8 port over NaCl
 
 <p align="justify">While searching for V8 ports, I also encountered an official port of V8 over NaCl which was now our last and best shot at getting this to work. It also had a promising start, at least after <a href=https://groups.google.com/forum/#!topic/native-client-discuss/aribXPUx5B0>this discussion</a> with NaCl Google developers who were helpful and pointed me in the right direction. When trying to build, in order to test the V8, I ran into an unexpected issue. The V8 wouldn't build.  Now, this is often common due to missing dependencies, wrong setups or many more other circumstances, but this wouldn't change. I also opened a <a href=https://groups.google.com/forum/#!topic/v8-users/OnvT2A5rxQE> thread </a>  on V8 users, that has no answers to this day. While searching for a solution, I tried <strike>a couple</strike> way too many that I should have V8 versions, following this
 <a href=https://gist.github.com/domenic/aca7774a5d94156bfcc1> V8 versions for embedders</a> guide, but none worked. <br><br>
 The error I was getting was related to ARM, which, at first, didn't make any sense, as I was building over NaCl, but on x64. Tracing the cause I found <a href=https://groups.google.com/forum/#!topic/native-client-discuss/Xw5yCe3Ubwc>how the V8 was actually ported</a>,having V8 generate ARM instructions and then use a portable ARM interpreter to avoid the need to port V8 code generators to NaCl. This lead us to the obvious decision to give up.  </p>
-
+</p>
 ## Conclusion
 
 <p align="justify">This were all the alternatives we did find at the time of writing. Fully exploring these,along with the complex nature of V8 alone paired with the constrains imposed by NaCl led us to believe that having a V8 port of NaCl that could offer a better security model is something we cannot obtain - at least at the moment - unless fully we commit to the effort of porting and maintaining it ourselves.
