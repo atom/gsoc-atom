@@ -55,7 +55,7 @@ Tests were performed on the following setup: <br><br>
 Operating System: Ubuntu 14.04<br>
 Platform: x64<br>
 Chrome version: Version 45.0.2441.0 (64-bit) built from source <br>
-Atom version: 0.208.0-cecd233 built from source. <br>
-
-<b> Note:</b> All aforementioned key combinations (on their specific layouts) were tested in the URL bar(of Chrome) as well as in a terminal. The keyboard events issue is not caused by the operating system. Further proof is that the issues manifest differently on different operating systems.
+Atom version: 0.208.0-cecd233 built from source. <br> <br>
 </p>
+<p align="justify"><b> Note:</b>  All aforementioned key combinations (on their specific layouts) were tested in the URL bar(of Chrome) as well as in a terminal. The keyboard events issue is not caused by the operating system. Further proof is that the issues manifest differently on different operating systems. </p>
+
