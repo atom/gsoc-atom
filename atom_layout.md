@@ -55,7 +55,7 @@ The set of patches can be seen <a href=https://codereview.chromium.org/929053004
 At the moment of writing, there's an experimental/unsupported feature that can be enabled by turning <b> Enable experimental WebKit features</b> on in chrome://flags.
 It can also be enabled by using a <a href=https://www.chromium.org/blink/runtime-enabled-features> runtime argument to the command line</a> 
 
-Now, there's just the .code (domCode in source code) implemented in experimental Chrome. I <b> tested </b> this  in Chrome and it does report the location <b>correctly</b>. In example, for alt gr, it reports having alt right pressed. <br>
+Now, there's just the .code (domCode in source code) implemented in experimental Chrome. I <b> tested </b> this  in Chrome and it does report the location <b>correctly</b>. In example, for alt gr, it reports having alt right pressed. <br> 
 
 .key field (domKey in source code) is not implemented yet, not even in the latest edition of chrome, the patches enabling it are stil up for review.
 </p>
