@@ -47,7 +47,7 @@ There's a saying about what hapens when you chase two rabbits, so we decided to 
 <p align="justify">
 Investigating chrome source, aiming to decide if we have enough correct information to properly determine all keys or if we should look for alternatives.
 
-Update as of 1 July<br><br>
+<br><br>Update as of 1 July<br><br>
 
 After some research, I found out that two fields will/are being added to the <b>KeyboardEvent</b> object in Blink.
 The set of patches can be seen <a href=https://codereview.chromium.org/929053004>here</a>, it's up for code review. 
