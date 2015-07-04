@@ -47,7 +47,7 @@ There's a saying about what hapens when you chase two rabbits, so we decided to 
 <p align="justify">
 Investigating chrome source, aiming to decide if we have enough correct information to properly determine all keys or if we should look for alternatives.
 
-<br><br>Update as of 1 July<br><br>
+<br><br>Update as of 1st of July<br><br>
 
 After some research, I found out that two fields will/are being added to the <b>KeyboardEvent</b> object in Blink.
 The set of patches can be seen <a href=https://codereview.chromium.org/929053004>here</a>, it's up for code review. <br><br>
@@ -58,6 +58,16 @@ It can also be enabled by using a <a href=https://www.chromium.org/blink/runtime
 Now, there's just the .code (domCode in source code) implemented in experimental Chrome. I <b> tested </b> this  in Chrome and it does report the location <b>correctly</b>. In example, for alt gr, it reports having alt right pressed. <br><br>
 
 .key field (domKey in source code) is not implemented yet, not even in the latest edition of chrome, the patches enabling it are stil up for review.
+</p>
+<br><br> Update as of 3rd of July <br><br>
+<p align="justify">
+In order to have a fully functional German keyboard layout, we need the <b> .key </b> member implemented. This <a href=https://codereview.chromium.org/929053004> set of patches </a> do implement the .key member so <i> theoretically </i> it would fix our issue. <br><br>
+
+The "Enable experimental Webkit features" flag can be found in chrome, starting from <a href=https://src.chromium.org/viewvc/chrome?revision=210820&view=revision >revision 210820 </a><br><br>
+
+<b> important note: </b> The ".code" and ".key" members return <b> string </b> containing the physical key pressed, respectively the actual key on the layout. So the whole atom-keymap helper function can/will be removed. <br><br>
+
+Example: When pressing alt gr on a german layout, .code value is "AltRight". <br><br>
 </p>
 
 
