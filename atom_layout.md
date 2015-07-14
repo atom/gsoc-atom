@@ -70,6 +70,7 @@ The "Enable experimental Webkit features" flag can be found in chrome, starting 
 Example: When pressing alt gr on a german layout, .code value is "AltRight". <br><br>
 </p>
 
+<p align = "justify"> <b> Latest note on .key </b> : In order to get key working you have to apply <a href=https://codereview.chromium.org/929053004> issue 929053004 </a>  and then apply ( manually, if it doesn't auto apply) the issue <a href=https://codereview.chromium.org/1146173006> issue 1146173006 </a>. After that, you will no longer be required to enable the experimental flag. It will work as is. </p>
 
 ## Background details & relevant information
 <p align="justify">
