@@ -60,7 +60,7 @@ To check if the fix is already upstream, go to <a href=https://codereview.chromi
 <p align="justify">
 As this feature/fix is "bleeding edge", there's a very high chance of it not working at all.  Below, however, is the theoretical approach on how  to apply the patches for .key and .code features. The two patch sets mentioned above have a prerequisite, <a href=https://codereview.chromium.org/1103263004>issue 1103263004 </a>. If  this patch is backported to the current version, then <a href=https://codereview.chromium.org/929053004> issue 929053004 </a> and <a href=https://codereview.chromium.org/1146173006> issue 1146173006 </a> should apply smoothly. </p>
 
-
+</p>
 ## Background details & relevant information
 
 <p align="justify">
