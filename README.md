@@ -1,4 +1,5 @@
-# Google Summer of Code Project – Atom Security
+##### Atom and all repositories under Atom will be archived on December 15, 2022. Learn more in our [official announcement](https://github.blog/2022-06-08-sunsetting-atom/)
+ # Google Summer of Code Project – Atom Security
 
 This is a research project with the aim of discovering techniques we can apply to provide better security in Atom without sacrificing Atom's current power and flexibility. Summer of Code fellow @pandrei will be heading the project, and @nathansobo will be the contact on the core team. Progress reports and discussions for the project as a whole will take place on this repository. It will also include links to relevant repositories where work is taking place here.
 
